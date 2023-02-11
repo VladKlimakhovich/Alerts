@@ -1,0 +1,81 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.alerts {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered);
+    }
+  }
+}
+
+
+.critical {
+  background-color: #f1cecd;
+
+  border: 2px solid #e8908c;
+  height: 60px;
+  width: 500px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.low {
+  background-color: #c9e0ca;
+  border: 2px solid #82bd86;
+  height: 60px;
+  width: 500px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: table-cell;
+
+}
+
+.normal {
+  background-color: #c3dff2;
+  border: 2px solid #73b9ea;
+  height: 60px;
+  width: 500px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.object {
+  margin: 7px;
+  border-color: #1e1e1e;
+  border-radius: 5px;
+  width: 500px;
+}
